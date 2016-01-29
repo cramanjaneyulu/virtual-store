@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <title>Shopping</title>
     <meta name="description" content="Shopping - A-Frame">
+       
     <script src="js/aframe.min.js"></script>
-		<script src="js/jquery-2.2.0.min.js"></script>
+ <script src="js/jquery-1.7.1.min.js"></script>
   </head>
   <body>
     <a-scene>
@@ -25,30 +26,70 @@
       </a-curvedimage>
 -->
       <!-- Price -->
-      <a-image src="price.png" width="7" height="3.5" scale="0.2 0.2 0.2">
+     <!-- <a-image src="price.png" width="7" height="3.5" scale="0.2 0.2 0.2">
         <a-animation attribute="position" from="0 2.8 -6" to="2.25 2.8 -6" begin="1000" dur="1000"></a-animation>
       </a-image>
+    -->
 
       <!-- Goggles -->
+      <!--
       <a-cylinder color="#101010" height="0.02">
         <a-animation attribute="rotation" from="-270 0 0" to="-90 0 0" dur="750" begin="1000" fill="both"></a-animation>
         <a-animation attribute="position" from="8 0 -9" to="8 3.5 -9" dur="750" begin="1000" fill="both"></a-animation>
         <a-image src="../_images/goggles.png" width="2" height="1" rotation="90 0 0" position="0 -.05 0" scale=".4 .4 .4"></a-image>
       </a-cylinder>
-
+-->
       <!-- Stereoscopic Fall Collection -->
-      <a-curvedimage src="fall.png" radius="5.7" theta-length="18" height=".45" position="0 0.9 0" scale=".4 .4 .4">
+      <a-image src="img/levis-logo.png" width="3" height="1.5" scale="0.2 0.2 0.2">
+        <a-animation attribute="position" from="0 2.6 -1.5" to="0 2.6 -1.5" begin="1000" dur="1000"></a-animation>
+      </a-image>
+     <a-image src="img/shirts.png" width="7" height="3.5" scale="0.2 0.2 0.2">
+        <a-animation attribute="position" from="0 2.8 -3" to="0 2.8 -3" begin="1000" dur="1000"></a-animation>
+      </a-image>
+      <a-image src="img/men.png" width="7" height="3.5" scale="0.2 0.2 0.2">
+        <a-animation attribute="position" from="-8 2.8 -6" to="-8 2.8 -6" begin="1000" dur="1000"></a-animation>
+      </a-image>
+       <a-image src="img/women.png" width="7" height="3.5" scale="0.2 0.2 0.2">
+        <a-animation attribute="position" from="7 2.8 -6" to="7 2.8 -6" begin="1000" dur="1000"></a-animation>
+      </a-image>
+       <a-image src="img/193960006-detail2-pdp.jpg" width="10" height="15" scale="0.2 0.2 0.2">
+        <a-animation attribute="position" from="6 2.8 -8" to="6 2.8 -8" begin="1000" dur="1000"></a-animation>
+      </a-image>
+     <a-image src="img/658160167-detail1-pdp.jpg" width="10" height="15" scale="0.2 0.2 0.2">
+        <a-animation attribute="position" from="-6 2.8 -8" to="-6 2.8 -8" begin="1000" dur="1000"></a-animation>
+      </a-image>
+<!-- Men Shirts & Tops -->
+      <a-curvedimage src="img/194470002-front-pdp.jpg" radius="5" theta-length="18" height=".8" position="0 0.9 0" scale=".2 .6 .5">
+        <a-animation attribute="rotation" from="0 20 0" to="0 69 0" begin="750" dur="1000"></a-animation>
+      </a-curvedimage>
+      <a-curvedimage src="img/658160167-front-pdp.jpg" radius="5" theta-length="18" height=".8" position="0 0.9 0" scale=".2 .6 .5">
+        <a-animation attribute="rotation" from="0 20 0" to="0 62 0" begin="750" dur="1000"></a-animation>
+      </a-curvedimage>
+      <a-curvedimage src="img/194470002-front-pdp.jpg" radius="5" theta-length="18" height=".8" position="0 0.9 0" scale=".2 .6 .5">
         <a-animation attribute="rotation" from="0 20 0" to="0 55 0" begin="750" dur="1000"></a-animation>
       </a-curvedimage>
-<div id="shirt1" >Womens Shirts & Tops</div>
 
-	  <a-curvedimage  src="173690073-front-pdp-main.jpg" radius="5" theta-length="18" height=".8" position="0 0.9 0" scale=".3 .5 .4">
+      <a-curvedimage src="img/658160116-2015-fall-front-pdp.jpg" radius="5" theta-length="18" height=".8" position="0 0.9 0" scale=".2 .6 .5">
+        <a-animation attribute="rotation" from="0 20 0" to="0 48 0" begin="750" dur="1000"></a-animation>
+      </a-curvedimage>
+<!-- <div >Womens Shirts & Tops</div> -->
+
+	  <a-curvedimage cursor="fuse: true; maxDistance: 30; timeout: 500" id="shirt1" src="img/173690073-front-pdp-main.jpg" radius="5" theta-length="18" height=".8" position="0 0.9 0" scale=".3 .5 .4">
         <a-animation attribute="rotation" from="0 -20 0" to="0 -30 0" begin="750" dur="1000"></a-animation>
       </a-curvedimage>
-	 <a-curvedimage  src="227500001-front-pdp-main.jpg" radius="5" theta-length="18" height=".8" position="0 0.9 0" scale=".3 .5 .4">
+<a-entity cursor="fuse: true;"
+          position="0 0.9 0" >
+</a-entity>
+
+	 <a-curvedimage  src="img/227500001-front-pdp-main.jpg" radius="5" theta-length="18" height=".8" position="0 0.9 0" scale=".3 .5 .4">
         <a-animation attribute="rotation" from="0 -20 0" to="0 -43 0" begin="750" dur="1000"></a-animation>
       </a-curvedimage>
-	 
+	    <a-curvedimage  src="img/172690028-front-pdp.jpg" radius="5" theta-length="18" height=".8" position="0 0.9 0" scale=".3 .5 .4">
+        <a-animation attribute="rotation" from="0 -20 0" to="0 -20 0" begin="750" dur="1000"></a-animation>
+      </a-curvedimage>
+     <a-curvedimage  src="img/172690028-front-pdp.jpg" radius="5" theta-length="18" height=".8" position="0 0.9 0" scale=".3 .5 .4">
+        <a-animation attribute="rotation" from="0 -56 0" to="0 -56 0" begin="750" dur="1000"></a-animation>
+      </a-curvedimage>
       <!-- Shoes thumbnail 
       <a-curvedimage src="shoes.png" radius="5.7" theta-length="18" height=".8" position="0 0.9 0" scale=".4 .4 .4">
         <a-animation attribute="rotation" from="0 -20 0" to="0 -30 0" begin="750" dur="1000"></a-animation>
@@ -61,13 +102,45 @@
       <a-light type="directional" color="#fff" intensity="0.2" position="-1 2 1"></a-light>
       <a-light type="ambient" color="#fff"></a-light>
 
-    </a-scene>
+<a-entity cursor="fuse: true;"
+          position="0 0.9 0"
+          geometry="primitive: ring"
+          material="color: white; shader: flat">
+</a-entity>
+
+<a-entity id="cube" geometry="primitive: box" material="color:#001B43"></a-entity>
+<script type="text/javascript">
+  document.querySelector('#shirt1').addEventListener('click', function () {
+ // this.setAttribute('material', 'color', 'red');
+  console.log('shirt1 clicked!');
+});
+</script>
+</a-scene>
 
 	<script>
-	$(document).ready(function(){
+  document.querySelector('#cube').addEventListener('click', function () {
+ // this.setAttribute('material', 'color', 'red');
+  console.log('I was clicked!');
+});
 
-		$("#shirt1").click(function(){
-			alert(0);
+  document.querySelector('#shirt1').addEventListener('click', function () {
+ // this.setAttribute('material', 'color', 'red');
+  console.log('shirt1 clicked!');
+});
+
+/*
+  downtown = document.querySelector('#shirt1');
+  downtown.addEventListener('click', function() {
+      //alert(0);
+      console.log('Test..');
+});
+*/
+//$.noConflict();
+jQuery(document).ready(function(){
+//alert(0);
+		jQuery("#shirt1").on("click",function(){
+			alert(1);
+        console.log('Test..');
 		});
 	}); 
 	</script>
